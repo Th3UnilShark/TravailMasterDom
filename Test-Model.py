@@ -86,21 +86,21 @@ print("-"*50)
 # 4. TRAINING
 # ==========================================
 
-if __name__ == '__main__':
-    print("Starting training...")
-    
-    # Fine-tune the model:
-    # 1. Freeze the base layers (ResNet) and train only the new head (1 epoch)
-    # 2. Unfreeze and train the whole network for 1 epoch (you can increase this to 3-5)
-    # Note: fine_tune(1) means 1 epoch of full training after freezing.
-    # If you want more training, change to learn.fine_tune(3) or learn.fit_one_cycle(5)
-    learn.fine_tune(1)
-    
-    # Save the model
-    learn.export("cat_dog_model.pkl")
-    print("Training complete. Model saved as 'cat_dog_model.pkl'")
 
-    # Optional: Test the model on a single image
-    # Replace 'test_image.jpg' with a path to a new image
-    # pred_class, pred_idx, outputs = learn.predict("test_image.jpg")
-    # print(f"Prediction: {pred_class}")
+print("Starting training...")
+
+# Fine-tune the model:
+# 1. Freeze the base layers (ResNet) and train only the new head (1 epoch)
+# 2. Unfreeze and train the whole network for 1 epoch (you can increase this to 3-5)
+# Note: fine_tune(1) means 1 epoch of full training after freezing.
+# If you want more training, change to learn.fine_tune(3) or learn.fit_one_cycle(5)
+learn.fine_tune(1)
+
+# Save the model
+learn.export("cat_dog_model.pkl")
+print("Training complete. Model saved as 'cat_dog_model.pkl'")
+
+# Optional: Test the model on a single image
+# Replace 'test_image.jpg' with a path to a new image
+# pred_class, pred_idx, outputs = learn.predict("test_image.jpg")
+# print(f"Prediction: {pred_class}")

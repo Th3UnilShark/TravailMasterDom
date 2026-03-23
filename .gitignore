@@ -1,0 +1,9 @@
+my_cats_dogs/
+stab_data/
+Scripts/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.egg-info/
