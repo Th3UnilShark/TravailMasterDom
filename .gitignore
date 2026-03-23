@@ -1,6 +1,6 @@
 my_cats_dogs/
 stab_data/vit_stabby_no_augm
-Scripts/
+Scripts/staby_small_dataset
 .venv/
 __pycache__/
 *.pyc
