@@ -8,3 +8,5 @@ __pycache__/
 .DS_Store
 *.egg-info/
 Orange/
+edges_stab_data/
+semantic_stab_data/
