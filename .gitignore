@@ -10,3 +10,5 @@ __pycache__/
 Orange/
 edges_stab_data/
 semantic_stab_data/
+sobel_stab_data/
+cropped_sobel_stab_data/
