@@ -8,7 +8,7 @@ __pycache__/
 .DS_Store
 *.egg-info/
 Orange/
-edges_stab_data/
+canny_stab_data/
 grayscale_stab_data/
 sobel_stab_data/
 cropped_stab_data/
